@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class AlgoritmsTest {
 @Test
-public static void main(String[] args) {
+public void IsnumberOddTest() {
     Algoritms oddEven = new Algoritms();
 
     String expectedResult;
@@ -16,10 +16,7 @@ public static void main(String[] args) {
     expectedResult = "Odd";
     a = -345;
     actualResult = Algoritms.isNumbersOdd(a);
-    System.out.println(expectedResult+ ":" + actualResult);
+    System.out.println(expectedResult + ":" + actualResult);
     Assert.assertEquals(expectedResult, actualResult);
-
-
-
 }
 }
