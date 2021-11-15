@@ -27,11 +27,12 @@ public class BottlesOfBeerTest {
         driver.quit();
     }
 
+    final String URL = "http://www.99-bottles-of-beer.net/";
     @Test
     public void testBottlesOfBeer() {
          String expectedResult = "Welcome to 99 Bottles of Beer";
          String HEADER = "//h2[text()='Welcome to 99 Bottles of Beer']";
-        driver.get("http://www.99-bottles-of-beer.net/");
+        driver.get(URL);
         driver.findElement(By.xpath(HEADER));
 
         String actualResult = driver.findElement(By.xpath(HEADER)).getText();
